@@ -1,0 +1,11 @@
+import pandas as pd
+x = pd.Series([
+    ['Red', 'Green', 'White'],
+    ['Red', 'Black'],
+    ['Yellow']])
+
+print("Original Series of list")
+print(x)
+x = x.apply(pd.Series).stack().reset_index(drop=True)
+print("One Series")
+print(x)
