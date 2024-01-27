@@ -1,0 +1,22 @@
+# Importing the NumPy library with an alias 'np'
+import numpy as np 
+
+# Creating two NumPy arrays 'nums1' and 'nums2' containing 2x3 matrices
+nums1 = np.array([[2, 5, 2],
+              [1, 5, 5]])
+
+nums2 = np.array([[5, 3, 4],
+              [3, 2, 5]])
+
+# Printing the contents of 'nums1' array
+print("Array1:") 
+print(nums1)
+
+# Printing the contents of 'nums2' array
+print("Array2:") 
+print(nums2)
+
+# Performing element-wise multiplication of arrays 'nums1' and 'nums2' using np.multiply()
+# This operation multiplies corresponding elements of the two arrays
+print("\nMultiply two given arrays:")
+print(np.multiply(nums1, nums2))
